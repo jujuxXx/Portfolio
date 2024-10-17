@@ -1,0 +1,234 @@
+body{
+    z-index: 1000;
+    margin: 0;
+    background-image: url(Fundo\ Inicial.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-color: #2E4053;
+    color: white;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    font-family: "Nanum Myeongjo", serif;
+}
+#main{
+    width: 120%;
+    height: 100vh;
+}
+header ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    margin-left: 1%;
+    margin-top: 1%;
+}
+header li{
+    display: inline-block;
+    margin-right: 15px;
+    font-family: "Nanum Myeongjo", serif;
+    font-weight: 200;
+}
+header a{
+    text-decoration: none;
+    color: white;
+}
+main{
+    margin-top: 5%;
+    text-align: center;
+    font-weight: 32;
+}
+.titulo{
+    margin-top: -3%;
+    font-family: "Italiana", sans-serif;
+    font-size: 400%;
+    margin-right: 27%;
+    font-weight: 96;
+}
+main p{
+    font-family: "Inria Serif", serif;
+    font-size: 150%;
+    margin-top: -2%;
+    font-weight: 32;
+}
+#main-container{
+    margin-top: 7%;
+    display: flex;
+    width: 71.3%;
+    height: 42vh;
+}
+#main-div{
+    width: 40%;
+    height: 42vh;
+    text-align: center;
+}
+#main-div h2{
+    font-size: 300%;
+    margin-top: -5%;
+    font-weight: 200;
+    font-family: "Nanum Myeongjo", serif;
+}
+.about_me{
+    text-align: left;
+    font-size: 200%;
+    font-family: "Nanum Myeongjo", serif;
+    margin-left: 20%;
+}
+.html_css{
+    margin-left: 19%;
+    margin-top: -6%;
+    background-image: url(Html\ e\ Css.png);
+    height: 80%;
+    width: 52%;
+}
+.photo-area{
+    margin-left: 35%;
+    width: 30%;
+    height: 50%;
+    border-radius:50%;
+    background-color: #D9D9D9;
+}
+footer{
+    margin-top: 6.9%;
+    margin-left: 5%;
+}
+footer svg{
+    fill: white;
+    width: 2%;
+    margin-left: 3%;
+}
+#footer{
+    margin-left:87%;
+    opacity: 1;
+    background-color: #1c263b;
+    width: 20%;
+    margin-top: -0.1%;
+    position: absolute;
+    height: 12vh;
+}
+.sidebar {
+    position: fixed;
+    left: -250px;
+    top: 0;
+    width: 150px;
+    height: 100%;
+    background-color: #333;
+    transition: 0.3s;
+    padding-top: 60px;
+    z-index: 1000;
+}
+
+.sidebar ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    padding: 10px 20px;
+}
+
+.sidebar ul li a {
+    text-decoration: none;
+    color: white;
+    display: block;
+}
+
+.sidebar ul li:hover {
+    background-color: #575757;
+}
+
+.menu-toggle {
+    display: none;
+}
+
+.menu-icon {
+    display: none;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    cursor: pointer;
+    z-index: 1001;
+}
+
+.menu-icon img {
+    width: 30px;
+}
+
+@media screen and (max-width: 768px) {
+    .menu-icon {
+        display: block;
+    }
+    .sidebar{
+        background-image: url(menu\ lateral\ celular.png);
+        background-size: contain;
+    }
+    header li{
+        opacity: 0;
+    }
+    #menuToggle:checked + .menu-icon + #menu {
+        left: 0;
+    }
+    label svg{
+        width: 7%;
+        margin-top: 5%;
+    }
+    .titulo{
+        margin-top: -20%;
+        font-size: 400%;
+    }
+    .about_me{
+        margin-left: -10%;
+        font-size: 150%;
+    }
+    body {
+        background-image: url('fundo\ inicial\ celular.png');
+        max-width: 100%;
+        overflow-x: hidden;
+        overflow-y: hidden;
+    }
+    .photo-area{
+        width: 80%;
+        height: 30%;
+        margin-left: 25%;
+    }
+    #main-div h2{
+        margin-left: -10%;
+        width: 150%;
+        margin-top: -5%;
+        font-size: 200%;
+    }
+    main{
+        text-align: left;
+        margin-left: 10%;
+        margin-top: 30%;
+    }
+    header ul {
+        display: flex;
+        left: -100%;
+    }
+
+    .menu-toggle:checked + .menu-icon + #menu {
+        left: 0;
+    }
+
+    .menu-icon {
+        display: block;
+        position: absolute;
+        top: 20px;
+        left: 20px;
+        cursor: pointer;
+        z-index: 1001;
+    }
+    #footer{
+        opacity: 0;
+    }
+    #footer-end svg{
+        margin-top: 35%;
+        width: 10%;
+    }
+    .menu-icon img {
+        width: 30px;
+        height: 30px;
+    }
+    #menuToggle:checked + .menu-icon {
+        z-index: 1002;
+    }
+}

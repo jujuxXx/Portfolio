@@ -1,0 +1,220 @@
+body{
+    margin: 0;
+    background-image: url(Fundo\ Inicial.png);
+    background-size: contain;
+    background-color: #2e4053;
+    background-repeat: no-repeat;
+    color: white;
+    overflow-y: hidden;
+    overflow-x: hidden;
+    font-family: "Nanum Myeongjo", serif;
+}
+#main{
+    width: 140%;
+    height: 100vh;
+}
+header ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    margin-left: 1%;
+    margin-top: 1%;
+}
+header li{
+    display: inline-block;
+    margin-right: 15px;
+    font-family: "Nanum Myeongjo", serif;
+    font-weight: 200;
+}
+header a{
+    text-decoration: none;
+    color: white;
+}
+main{
+    margin-top: 5%;
+    text-align: center;
+    font-weight: 32;
+}
+.titulo{
+    margin-top: 0%;
+    font-family: "Italiana", sans-serif;
+    font-size: 600%;
+    margin-right: 27%;
+    font-weight: 96;
+}
+main p{
+    font-family: "Inria Serif", serif;
+    font-size: 150%;
+    margin-top: -2%;
+    font-weight: 32;
+}
+#main-container{
+    display: flex;
+    width: 71.3%;
+    height: 42vh;
+}
+#main-div{
+    width: 50%;
+    height: 42vh;
+    text-align: center;
+}
+#main-div h2{
+    font-size: 300%;
+    font-weight: 200;
+    font-family: "Italiana", sans-serif;
+}
+.html_css{
+    margin-left: 19%;
+    margin-top: -6%;
+    background-image: url(Html\ e\ Css.png);
+    height: 80%;
+    width: 62%;
+}
+.soft-skills{
+    list-style: none;
+    margin-right: 5%;
+    font-size: 200%;
+}
+#footer{
+    margin-top: 6.6%;
+    margin-left: 90%;
+    display: flex;
+    background-color: #1c263b;
+    position: absolute;
+    height: 12vh;
+    width: 10%;
+}
+footer{
+    margin-top: 4.7%;
+    margin-left: 5%;
+}
+footer svg{
+    fill: white;
+    width: 2%;
+    margin-left: 3%;
+}
+
+.sidebar {
+    position: fixed;
+    left: -250px;
+    top: 0;
+    width: 150px;
+    height: 100%;
+    background-color: #333;
+    transition: 0.3s;
+    padding-top: 60px;
+    z-index: 1000;
+}
+
+.sidebar ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    padding: 10px 20px;
+}
+
+.sidebar ul li a {
+    text-decoration: none;
+    color: white;
+    display: block;
+}
+
+.sidebar ul li:hover {
+    background-color: #575757;
+}
+
+.menu-toggle {
+    display: none;
+}
+
+.menu-icon {
+    display: none;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    cursor: pointer;
+    z-index: 1001;
+}
+
+.menu-icon img {
+    width: 30px;
+}
+
+@media screen and (max-width: 768px) {
+    .menu-icon {
+        display: block;
+    }
+    .sidebar{
+        background-image: url(menu\ lateral\ celular.png);
+        background-size: contain;
+    }
+    header li{
+        opacity: 0;
+    }
+    #menuToggle:checked + .menu-icon + #menu {
+        left: 0;
+    }
+    label svg{
+        width: 7%;
+        margin-top: 5%;
+    }
+    body {
+        background-image: url('fundo\ inicial\ celular.png');
+    }
+    .titulo{
+        font-size: 400%;
+    }
+    main{
+        text-align: left;
+        margin-left: 10%;
+        margin-top: 30%;
+    }
+    #main-container{
+        margin-left: -10%;
+    }
+    #main-div h2{
+        font-size: 150%;
+    }
+    .soft-skills{
+        font-size: 150%;
+        text-align: left;
+    }
+    header ul {
+        display: flex;
+        left: -100%;
+    }
+
+    .menu-toggle:checked + .menu-icon + #menu {
+        left: 0;
+    }
+    .html_css{
+        margin-left: 10%;
+        width: 80%;
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+    #footer{
+        opacity: 0;
+    }
+    .menu-icon {
+        display: block;
+        position: absolute;
+        top: 20px;
+        left: 20px;
+        cursor: pointer;
+        z-index: 1001;
+    }
+    #footer-end svg{
+        margin-top: 18%;
+        width: 10%;
+    }
+    .menu-icon img {
+        width: 30px;
+        height: 30px;
+    }
+    #menuToggle:checked + .menu-icon {
+        z-index: 1002;
+    }
+}
